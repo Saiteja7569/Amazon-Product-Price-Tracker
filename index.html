@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<img src="https://wallpapers.com/images/hd/amazon-background-1qko3funkw9pw801.jpg"
+     alt="Amazon"
+     style="width:100%; height:250px; object-fit:cover;">
+
+<div class="container">
+    <h1>📉 Amazon Product Price Tracker</h1>
+
+    <form id="productForm">
+        <input type="text" id="name" placeholder="Product Name" required>
+        <input type="url" id="url" placeholder="Amazon Product URL" required>
+        <input type="number" id="price" placeholder="Current Price (₹)" required>
+        <button type="submit">Add Product</button>
+    </form>
+
+    <h2>Tracked Products</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price (₹)</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="productList"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
